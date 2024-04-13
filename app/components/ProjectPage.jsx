@@ -73,9 +73,9 @@ const ProjectDetail = ({ projectId }) => {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 2 }}
                     className="rounded-full overflow-hidden"
-                    style={{ borderRadius: '20px' }}>
+                    style={{ borderRadius: "20px" }}>
                     {project.videoLink ? (
-                        <div style={{ width:'80vw', height: '45vw'}}>
+                        <div style={{ width:"80vw", height: "45vw"}}>
                             <iframe
                                 width="100%"
                                 height="100%"
