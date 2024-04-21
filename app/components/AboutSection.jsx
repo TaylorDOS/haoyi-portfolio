@@ -24,9 +24,9 @@ const TAB_DATA = [
         id: "education",
         content: (
             <ul className="list-disc pl-2">
-                <li>Spring 2024 Exchange, Texas A&M University</li>
-                <li>Berkeley Summer Session 2022, University of California, Berkeley</li>
-                <li>Bachelor of Engineering, Singapore University of Technology and Design</li>
+                <li>BEng in Computer Science, Singapore University of Technology and Design</li>
+                <li>Spring Exchange (2024), Texas A&M University</li>
+                <li>Berkeley Summer Session (2022), University of California, Berkeley</li>
             </ul>
         ),
     },
@@ -57,7 +57,7 @@ const AboutSection = () => {
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                     <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
                     <p className="text-base lg:text-lg">
-                        As a junior Computer Science student from SUTD, I&apos;m passionate about crafting interactive applications. With experience in Python, JavaScript, Node.js, HTML, CSS, and git, I prioritize aesthetics and thrive in front-end UI/UX design. I&apos;m also enthusiastic about VR and AR development, always eager to expand my knowledge and skill set.
+                    Hello, I&apos;m a UX/UI designer with a solid background in Engineering, which equips me with the ability to conceptualize designs and bring them to life. My experience allows me to empathize with users, prioritizing their needs over mere wants when crafting products. Additionally, I possess proficiency in modeling, XR content delivery, software development, and backend deployment, poised to make substantial contributions to any project.
                     </p>
                     <div className="flex flex-row justify-start mt-8">
                         <TabButton

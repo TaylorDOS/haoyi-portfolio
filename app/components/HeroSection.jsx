@@ -34,7 +34,7 @@ const HeroSection = () => {
                         />
                     </h1>
                     <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                        currently seeking summer 2024 internship
+                        seeking roles in product design & development lifecycle.
                     </p>
                     <div>
                         <Link
