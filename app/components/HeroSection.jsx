@@ -13,7 +13,7 @@ const HeroSection = () => {
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1 }}>
-                    <h1 className="text-gray-800 text-6xl font-sfprobold tracking-tight">
+                    <h1 className="text-gray-800 text-4xl lg:text-6xl font-sfprobold tracking-tight">
                         <div className="mt-8 mb-2 text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">Hello, I&apos;m</div>
                         <TypeAnimation
                             sequence={[
