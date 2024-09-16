@@ -12,7 +12,7 @@ const ProjectPage = () => {
     const { id } = useParams();
 
     return (
-        <main className="flex min-h-screen flex-col bg-[#121212]">
+        <main className="flex min-h-screen flex-col bg-white">
             <Navbar />
             <div className='container mt-24 mx-auto px-12 py-4'>
                 <ProjectDetail projectId={id} />

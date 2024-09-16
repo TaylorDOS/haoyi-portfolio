@@ -44,18 +44,11 @@ const AboutSection = () => {
     };
 
     return (
-        <section className="text-white" id="about">
-            <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.5 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 1 }}
-                >
-                    <Image src="/images/AboutMe.png" width={400} height={400} className="rounded-lg" />
-                </motion.div>
+        <section className="text-gray-800" id="about">
+            <div className=" gap-8 items-center py-8 px-4 ">
 
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-                    <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+                    <h2 className="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
                     <p className="text-base lg:text-lg">
                     Hello, I&apos;m a UX/UI designer with a solid background in Engineering, which equips me with the ability to conceptualize designs and bring them to life. My experience allows me to empathize with users, prioritizing their needs over mere wants when crafting products. Additionally, I possess proficiency in modeling, XR content delivery, software development, and backend deployment, poised to make substantial contributions to any project.
                     </p>

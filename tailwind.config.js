@@ -19,6 +19,9 @@ module.exports = {
       primary: colors.cyan,
       secondary: colors.blue,
     },
+    fontFamily: {
+      sfprobold: ["var(--font-sfprobold)"],
+    },
   },
   plugins: [],
 };

@@ -12,9 +12,9 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#121212]">
+    <main className="flex flex-col bg-white">
       <Navbar/>
-      <container class='container mt-24 mx-auto px-12 py-4'>
+      <div class='container mt-32 px-4'>
         <HeroSection/>
         <AboutSection/>
         <ProjectSection/>
@@ -22,7 +22,7 @@ export default function Home() {
         <Footer />
         <SpeedInsights />
         <Analytics />
-      </container>
+      </div>
     </main>
   );
 }

@@ -66,7 +66,7 @@ const ProjectDetail = ({ projectId }) => {
 
     return (
         <div className="mb-10">
-            <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4 md:mb-8">{project.title}</h2>
+            <h2 className="text-center text-4xl font-bold text-black mt-4 mb-4 md:mb-8">{project.title}</h2>
             <div className="flex justify-center">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}
@@ -87,10 +87,10 @@ const ProjectDetail = ({ projectId }) => {
                                 allowfullscreen></iframe>
                         </div>
                     ) : (
-                        <Image src={project.image} alt={project.title} width={1000} height={300} rounded />)}
+                        <Image className="aspect-video object-cover"src={project.image} alt={project.title} width={1000} height={300} rounded />)}
                 </motion.div>
             </div >
-            <p className="text-center leading-relaxed mt-8 mb-8 md:mb-12 text-justify">{project.description}</p>
+            <p className="text-black leading-relaxed mt-8 mb-8 md:mb-12 text-justify">{project.description}</p>
         </div >
     );
 };
