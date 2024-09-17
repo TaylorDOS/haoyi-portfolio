@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
-import Image from "next/image";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -44,7 +43,7 @@ const EmailSection = () => {
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
 
-      <div className="z-10">
+      <div>
         <h5 className="text-xl font-bold text-gray-800 my-2">
           Let&apos;s Connect
         </h5>
