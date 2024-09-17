@@ -1,17 +1,16 @@
 import React from "react";
-const variants = {
-  default: { width: 0 },
-  active: { width: "calc(100% - 0.75rem)" },
-};
 
 const TabButton = ({ active, selectTab, children }) => {
-  const buttonClasses = active ? "text-gray-800 border-b border-primary-500" : "text-gray-500";
+  const buttonClasses = active
+    ? "text-white bg-gradient-to-br from-primary-500 to-secondary-500 scale-110"
+    : "text-gray-800 border border-black";
 
   return (
-    <button onClick={selectTab}>
-      <p className={`mr-3 font-semibold hover:text-primary-800 ${buttonClasses}`}>
-        {children}
-      </p>
+    <button
+      onClick={selectTab}
+      className={`px-4 py-2 rounded-full font-semibold transition-all duration-300 ease-in-out hover:bg-gradient-to-br hover:from-primary-500 hover:to-secondary-500 hover:text-white ${buttonClasses}`}
+    >
+      {children}
     </button>
   );
 };
