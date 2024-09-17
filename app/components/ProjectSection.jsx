@@ -6,6 +6,15 @@ import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
+    id: 0,
+    title: "Catapult's Digital Brochure",
+    description: "Full Stack Web Development",
+    image: "/images/projects/0.png",
+    tag: ["All", "Web", "Mobile"],
+    gitUrl: "/",
+    previewUrl: "/projects/0",
+  },
+  {
     id: 1,
     title: "LearnMate",
     description: "Interaction Design Project",

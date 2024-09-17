@@ -5,6 +5,15 @@ import { motion } from "framer-motion";
 
 const projectData = [
     {
+        id: 0,
+        title: "Catapult Digital Brochure",
+        description: "Catapult Digital Brochure is an interactive marketing tool developed during my internship with Capitaland. Designed to showcase value propositions and unique offerings, this brochure empowers clients with an engaging and dynamic presentation experience. Built on a low-code platform, it allows for seamless updates, ensuring that offerings can be easily modified and kept up-to-date by anyone, without extensive technical expertise.",
+        image: "/images/projects/0.png",
+        tag: ["All", "Web", "Mobile"],
+        gitUrl: "/",
+        previewUrl: "/projects/0",
+    },
+    {
         id: 1,
         title: "LearnMate",
         description: "Recognizing the unique needs of individuals with ADHD or similar attention disorders, LearnMate's goal is to help them focus better on study with integration between an interactive mood light and Pomodoro techniques. This innovative mood light aims to provide a personalized and conducive environment for improved focus, productivity, and overall well-being.",

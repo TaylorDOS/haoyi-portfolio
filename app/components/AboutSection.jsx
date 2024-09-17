@@ -1,8 +1,6 @@
 "use client";
 import React, { useTransition, useState } from "react";
-import Image from "next/image";
 import TabButton from "./TabButton";
-import { motion } from "framer-motion";
 
 const TAB_DATA = [
     {
@@ -10,12 +8,11 @@ const TAB_DATA = [
         id: "skills",
         content: (
             <ul className="list-disc pl-2">
-                <li>Node.js</li>
-                <li>React</li>
-                <li>Ruby On Rails</li>
-                <li>Figma</li>
-                <li>JavaScript</li>
-                <li>Unity3D</li>
+                <li>Web Development - React, Next.JS, Tailwind CSS</li>
+                <li>VR Game Development - Unity3D</li>
+                <li>Interaction Design - Protopie</li>
+                <li>Visual Design - Figma, Canva</li>
+                <li>App Development - Android Studio</li>
             </ul>
         ),
     },
@@ -24,9 +21,21 @@ const TAB_DATA = [
         id: "education",
         content: (
             <ul className="list-disc pl-2">
-                <li>BEng in Computer Science, Singapore University of Technology and Design</li>
-                <li>Spring Exchange (2024), Texas A&M University</li>
-                <li>Berkeley Summer Session (2022), University of California, Berkeley</li>
+                <li>Computer Science & Design (CSD) - Singapore University of Technology and Design</li>
+                <li>Global Exchange Program - Texas A&M University</li>
+                <li>Berkeley Summer Session - University of California Berkeley</li>
+                <li>Diploma of Merit in Mechanical Engineering - Singapore Polytechnic</li>
+            </ul>
+        ),
+    },
+    {
+        title: "Experience",
+        id: "experience",
+        content: (
+            <ul className="list-disc pl-2">
+                <li>Learning Design & Customer Success - Catapult by CapitaLand</li>
+                <li>Test Engineering - Dell Singapore</li>
+                <li>Smart Manufacturing Group - Advanced Remanufacturing & Technology Center (ARTC)</li>
             </ul>
         ),
     },
@@ -59,6 +68,13 @@ const AboutSection = () => {
                         >
                             {" "}
                             Education{" "}
+                        </TabButton>
+                        <TabButton
+                            selectTab={() => handleTabChange("experience")}
+                            active={tab === "experience"}
+                        >
+                            {" "}
+                            Experience{" "}
                         </TabButton>
                         <TabButton
                             selectTab={() => handleTabChange("skills")}
