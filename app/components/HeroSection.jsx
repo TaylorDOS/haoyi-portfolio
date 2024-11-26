@@ -55,10 +55,6 @@ const HeroSection = () => {
                 </motion.div>
             </div>
             <div className="relative w-full flex items-center justify-center">
-                <div className="absolute top-1/4 left-1/3 h-full w-full bg-cyan-300 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob z-0"></div>
-                <div className="absolute top-1/4 h-full w-full bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-2000 z-0"></div>
-                <div className="absolute bottom-1/4 right-1/3 h-full w-full bg-indigo-300 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-4000 z-0"></div>
-
                 <Image
                     src="/images/AboutMe.png"
                     alt="hero image"

@@ -9,28 +9,23 @@ const TAB_DATA = [
         id: "skills",
         content: (
             <ul className="space-y-2 text-gray-800">
-                <li className="flex items-center font-medium text-md">
-                    <HiArrowRight className="text-primary-600 mr-2" />
+                <li className="flex flex-col lg:flex-row font-medium text-md">
                     <span className="text-primary-600 whitespace-nowrap mr-2">Web Development:</span>
                     <span>React, Next.JS, Tailwind CSS</span>
                 </li>
-                <li className="flex items-center font-medium text-md">
-                    <HiArrowRight className="text-primary-600 mr-2" />
+                <li className="flex flex-col lg:flex-row font-medium text-md">
                     <span className="text-primary-600 whitespace-nowrap mr-2">Virtual Reality Game Development:</span>
                     <span>Unity3D</span>
                 </li>
-                <li className="flex items-center font-medium text-md">
-                    <HiArrowRight className="text-primary-600 mr-2" />
+                <li className="flex flex-col lg:flex-row font-medium text-md">
                     <span className="text-primary-600 whitespace-nowrap mr-2">Interaction Design:</span>
                     <span>Protopie</span>
                 </li>
-                <li className="flex items-center font-medium text-md">
-                    <HiArrowRight className="text-primary-600 mr-2" />
+                <li className="flex flex-col lg:flex-row font-medium text-md">
                     <span className="text-primary-600 whitespace-nowrap mr-2">Visual Design:</span>
                     <span>Figma, Canva</span>
                 </li>
-                <li className="flex items-center font-medium text-md">
-                    <HiArrowRight className="text-primary-600 mr-2" />
+                <li className="flex flex-col lg:flex-row font-medium text-md">
                     <span className="text-primary-600 whitespace-nowrap mr-2">App Development:</span>
                     <span>Android Studio</span>
                 </li>
@@ -45,24 +40,20 @@ const TAB_DATA = [
         id: "education",
         content: (
             <ul className="space-y-2 text-gray-800">
-                <li className="flex flex-wrap items-center font-medium text-md">
-                    <HiArrowRight className="text-primary-600 mr-2" />
-                    <span className="text-primary-600 whitespace-nowrap mr-2">Bachelor in Computer Science & Design (CSD):</span>
+                <li className="flex flex-col lg:flex-row font-medium text-md">
+                    <span className="text-primary-600 lg:whitespace-nowrap lg:mr-2">Bachelor in Computer Science & Design (CSD):</span>
                     <span>Singapore University of Technology and Design</span>
                 </li>
-                <li className="flex flex-wrap items-center font-medium text-md">
-                    <HiArrowRight className="text-primary-600 mr-2" />
-                    <span className="text-primary-600 whitespace-nowrap mr-2">Global Exchange Program:</span>
+                <li className="flex flex-col lg:flex-row font-medium text-md">
+                    <span className="text-primary-600 lg:whitespace-nowrap lg:mr-2">Global Exchange Program:</span>
                     <span>Texas A&M University</span>
                 </li>
-                <li className="flex flex-wrap items-center font-medium text-md">
-                    <HiArrowRight className="text-primary-600 mr-2" />
-                    <span className="text-primary-600 whitespace-nowrap mr-2">Berkeley Summer Session:</span>
+                <li className="flex flex-col lg:flex-row font-medium text-md">
+                    <span className="text-primary-600 lg:whitespace-nowrap lg:mr-2">Berkeley Summer Session:</span>
                     <span>University of California Berkeley</span>
                 </li>
-                <li className="flex flex-wrap items-center font-medium text-md">
-                    <HiArrowRight className="text-primary-600 mr-2" />
-                    <span className="text-primary-600 whitespace-nowrap mr-2">Diploma of Merit in Mechanical Engineering:</span>
+                <li className="flex flex-col lg:flex-row font-medium text-md">
+                    <span className="text-primary-600 lg:whitespace-nowrap lg:mr-2">Diploma of Merit in Mechanical Engineering:</span>
                     <span>Singapore Polytechnic</span>
                 </li>
             </ul>
@@ -74,18 +65,15 @@ const TAB_DATA = [
         id: "experience",
         content: (
             <ul className="space-y-2 text-gray-800">
-                <li className="flex flex-wrap items-center font-medium text-md">
-                    <HiArrowRight className="text-primary-600 mr-2" />
+                <li className="flex flex-col lg:flex-row font-medium text-md">
                     <span className="text-primary-600 whitespace-nowrap mr-2">Learning Design & Customer Success:</span>
                     <span>Catapult by CapitaLand</span>
                 </li>
-                <li className="flex flex-wrap items-center font-medium text-md">
-                    <HiArrowRight className="text-primary-600 mr-2" />
+                <li className="flex flex-col lg:flex-row font-medium text-md">
                     <span className="text-primary-600 whitespace-nowrap mr-2">Test Engineering:</span>
                     <span>Dell Singapore</span>
                 </li>
-                <li className="flex flex-wrap items-center font-medium text-md">
-                    <HiArrowRight className="text-primary-600 mr-2" />
+                <li className="flex flex-col lg:flex-row font-medium text-md">
                     <span className="text-primary-600 whitespace-nowrap mr-2">Smart Manufacturing Group:</span>
                     <span>Advanced Remanufacturing & Technology Center (ARTC)</span>
                 </li>
