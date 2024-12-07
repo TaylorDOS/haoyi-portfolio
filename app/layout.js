@@ -11,13 +11,13 @@ const sfprobold = localFont({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://https://haoyi-portfolio.vercel.app'),
+  metadataBase: new URL('https://taylordos-portfolio.vercel.app'),
   title: "Hao Yi's Portfolio Website",
   description: "Hao Yi's portfolio website is created in Next.js using Tailwind.CSS",
   openGraph: {
     title: "Hao Yi's Portfolio Website",
     description: "Hao Yi's portfolio website is created in Next.js using Tailwind.CSS", // Added OpenGraph description
-    url: 'https://haoyi-portfolio.vercel.app',
+    url: 'https://taylordos-portfolio.vercel.app',
     images: '/images/opengraph-image.png',
   },
 };
