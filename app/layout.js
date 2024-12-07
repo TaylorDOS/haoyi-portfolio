@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${sfprobold.variable}`}>
       <head>
-        <meta name="google-site-verification" content="9YqE7E_anQFzzFlDlZWg00R6asvYwKL0toFtZ1-U5o0" />
+        <meta name="google-site-verification" content="BBCa1f79QKD5a21-W-nAEe_WS4rr-kbWpZajXGMEnAE" />
       </head>
       <body className={`${sfpro.className}`}>
         {children}
