@@ -15,7 +15,10 @@ export const metadata = {
   title: "Hao Yi's Portfolio Website",
   description: "Hao Yi's portfolio website is created in Next.js using Tailwind.CSS",
   openGraph: {
-    images: '/images/opengraph.png',
+    title: "Hao Yi's Portfolio Website",
+    description: "Hao Yi's portfolio website is created in Next.js using Tailwind.CSS", // Added OpenGraph description
+    url: 'https://haoyi-portfolio.vercel.app',
+    images: '/images/opengraph-image.png',
   },
 };
 
