@@ -14,10 +14,6 @@ export const metadata = {
   metadataBase: new URL('https://https://haoyi-portfolio.vercel.app'),
   title: "Hao Yi's Portfolio Website",
   description: "Hao Yi's portfolio website is created in Next.js using Tailwind.CSS",
-  verification: {
-    google: 'BBCa1f79QKD5a21-W-nAEe_WS4rr-kbWpZajXGMEnAE',
-    
-  },
   openGraph: {
     images: '/images/opengraph.png',
   },
@@ -27,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${sfprobold.variable}`}>
       <head>
-        <meta name="google-site-verification" content="BBCa1f79QKD5a21-W-nAEe_WS4rr-kbWpZajXGMEnAE" />
+        <meta name="google-site-verification" content="9YqE7E_anQFzzFlDlZWg00R6asvYwKL0toFtZ1-U5o0" />
       </head>
       <body className={`${sfpro.className}`}>
         {children}
