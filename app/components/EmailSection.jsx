@@ -16,7 +16,7 @@ const EmailSection = () => {
       message: e.target.message.value,
     };
     const JSONdata = JSON.stringify(data);
-    const endpoint = "../api/api_four";
+    const endpoint = "../api/email";
 
     try {
       const response = await fetch(endpoint, {
@@ -53,12 +53,18 @@ const EmailSection = () => {
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
-        <div className="socials flex flex-row gap-2">
-          <Link href="https://www.github.com/taylorDOS" aria-label="Github">
-            <FaGithub size={30} className="text-gray-600 hover:text-gray-800 transition-colors" />
+        <div className="socials flex flex-row gap-4">
+          <Link href="https://www.github.com/taylorDOS" aria-label="Github" target="_blank">
+            <FaGithub
+              size={50}
+              className="text-gray-500 hover:text-blue-600 transition-all duration-300 transform hover:scale-110"
+            />
           </Link>
-          <Link href="https://www.linkedin.com/in/tanhaoyi/" aria-label="LinkedIn">
-            <FaLinkedin size={30} className="text-gray-600 hover:text-gray-800 transition-colors" />
+          <Link href="https://www.linkedin.com/in/tanhaoyi/" aria-label="LinkedIn" target="_blank">
+            <FaLinkedin
+              size={50}
+              className="text-gray-500 hover:text-secondary-600 transition-all duration-300 transform hover:scale-110"
+            />
           </Link>
         </div>
       </div>
@@ -82,7 +88,7 @@ const EmailSection = () => {
                 id="email"
                 required
                 className="bg-white border border-gray-400 placeholder-[#9CA2A9] text-black text-sm rounded-lg block w-full p-2.5"
-                placeholder="jacob@google.com"
+                placeholder="coolkid@gmail.com"
               />
             </div>
             <div className="mb-6">
@@ -117,9 +123,9 @@ const EmailSection = () => {
             </div>
             <button
               type="submit"
-              className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+              className="bg-gradient-to-br from-primary-500 to-secondary-500 hover:opacity-90 text-white font-medium py-2.5 px-5 rounded-lg w-full transition-all duration-300 shadow-md"
             >
-              Send Message
+              Message
             </button>
 
           </form>

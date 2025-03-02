@@ -16,10 +16,11 @@ export default function Home() {
         <AboutSection />
         <ProjectSection />
         <EmailSection />
-        <Footer />
-        <SpeedInsights />
-        <Analytics />
       </div>
+      <SpeedInsights />
+      <Analytics />
+      <Footer />
     </main>
+
   );
 }

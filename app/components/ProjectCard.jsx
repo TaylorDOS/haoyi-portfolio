@@ -1,26 +1,27 @@
 import React from "react";
-import Link from "next/link";
+import Image from "next/image";
 
-const ProjectCard = ({ imgUrl, title, description, previewUrl }) => {
+const ProjectCard = ({ imgUrl, title, description, tags = [], onClick }) => {
   return (
-    <Link href={previewUrl} passHref>
-      <div className="relative group cursor-pointer transition-transform transform hover:scale-105">
-        <div
-          className="h-full rounded-xl relative aspect-video overflow-hidden"
-          style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
-        >
-          <div className="absolute top-0 left-0 w-full h-full bg-slate-600 opacity-0 group-hover:opacity-50 transition-opacity duration-500 rounded-xl"></div>
-
-          <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full hidden group-hover:flex transition-all duration-500 rounded-xl">
-            {/* Add content here if needed */}
-          </div>
-        </div>
-        <div className="text-gray-800 rounded-b-xl mt-2 text-center">
-          <h5 className="text-xl font-semibold">{title}</h5>
-          <p className="text-gray-400">{description}</p>
-        </div>
+    <div 
+      onClick={onClick} 
+      className="relative w-full mx-auto overflow-hidden rounded-xl bg-white shadow-md transition-transform duration-300 hover:shadow-xl hover:scale-105 group"
+    >
+      {/* Image Section */}
+      <div className="relative w-full aspect-video overflow-hidden rounded-t-xl">
+        <Image
+          src={imgUrl}
+          alt={title}
+          fill
+          className="object-cover"
+        />
       </div>
-    </Link>
+
+      <div className="text-center py-4">
+        <h3 className="text-lg font-bold text-gray-800">{title}</h3>
+        <p className="text-sm text-gray-600 mt-1">{description}</p>
+      </div>
+    </div>
   );
 };
 
