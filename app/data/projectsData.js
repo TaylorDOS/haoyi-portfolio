@@ -89,6 +89,15 @@ const projectsData = [
     tag: ["All", "Web"],
     externalLink: "https://pvfa.tamu.edu/news/2024/04/15/ice-nine-to-bring-virtual-reality-and-live-performance-together-at-igloo-studio/",
   },
+  {
+    id: 10,
+    title: "Hospital Delivery Robot",
+    description: "Capstone Project in collaboration with Techfox",
+    details:
+      "Hospital Delivery Robot is a capstone project focuses on developing an automated delivery system with loading and unloading capabilities to streamline logistics in the healthcare industry. Designed to address the pain points of medical staff, this robot aims to improve operational efficiency, minimize manual handling, and reduce idling time in hospital transport systems.",
+    image: "/images/projects/capstone.png",
+    tag: ["All", "Web", "Mobile"],
+  },
 ];
 
 export default projectsData;
