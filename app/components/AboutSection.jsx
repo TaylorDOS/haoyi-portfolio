@@ -82,51 +82,49 @@ const AboutSection = () => {
     const [activeTab, setActiveTab] = useState("education");
 
     return (
-        <section className="text-gray-800" id="about">
-            <div className="gap-8 items-center py-8">
-                <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-                    <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">About Me</h2>
-                    <p className="text-md text-justify leading-tight">
-                        Hello! I&apos;m a graduating Computer Science and Design student from SUTD, passionate about crafting intuitive, user-centered digital experiences. I specialize in UI/UX design, web development, visual storytelling, and immersive content creation. My strength is transforming complex data into engaging visual narratives, making insights accessible to everyone.
-                    </p>
-                    <p className="text-md mt-4 text-justify leading-tight">
-                        In addition to my deep interest in UI/UX, I have a strong foundation in full-stack application development and virtual reality content creation. I am constantly seeking opportunities to expand my knowledge and skill set.
-                    </p>
-                    <div className="flex flex-row justify-start mt-8 space-x-6 border-b border-gray-300">
-                        {tabs.map((tab) => (
-                            <button
-                                key={tab.id}
-                                onClick={() => setActiveTab(tab.id)}
-                                className={`relative pb-2 font-medium text-lg transition-all duration-300 ${activeTab === tab.id ? "text-primary-500" : "text-gray-600 hover:text-secondary-500"
-                                    }`}
-                            >
-                                {tab.title}
-                                {activeTab === tab.id && (
-                                    <motion.div
-                                        layoutId="underline"
-                                        className="absolute left-0 bottom-0 w-full h-1 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full"
-                                    />
-                                )}
-                            </button>
-                        ))}
-                    </div>
+        <div className="gap-8 items-center py-8">
+            <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+                <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">About Me</h2>
+                <p className="text-md text-justify leading-tight">
+                    Hello! I&apos;m a graduating Computer Science and Design student from SUTD, passionate about crafting intuitive, user-centered digital experiences. I specialize in UI/UX design, web development, visual storytelling, and immersive content creation. My strength is transforming complex data into engaging visual narratives, making insights accessible to everyone.
+                </p>
+                <p className="text-md mt-4 text-justify leading-tight">
+                    In addition to my deep interest in UI/UX, I have a strong foundation in full-stack application development and virtual reality content creation. I am constantly seeking opportunities to expand my knowledge and skill set.
+                </p>
+                <div className="flex flex-row justify-start mt-8 space-x-6 border-b border-gray-300">
+                    {tabs.map((tab) => (
+                        <button
+                            key={tab.id}
+                            onClick={() => setActiveTab(tab.id)}
+                            className={`relative pb-2 font-medium text-lg transition-all duration-300 ${activeTab === tab.id ? "text-primary-500" : "text-gray-600 hover:text-secondary-500"
+                                }`}
+                        >
+                            {tab.title}
+                            {activeTab === tab.id && (
+                                <motion.div
+                                    layoutId="underline"
+                                    className="absolute left-0 bottom-0 w-full h-1 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full"
+                                />
+                            )}
+                        </button>
+                    ))}
+                </div>
 
-                    <div className="mt-6">
-                        <AnimatePresence mode="wait">
-                            <motion.div
-                                key={activeTab}
-                                initial={{ opacity: 0, y: 10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: -10 }}
-                                transition={{ duration: 0.3 }}
-                            >
-                                {TAB_CONTENT[activeTab]}
-                            </motion.div>
-                        </AnimatePresence>
-                    </div>
+                <div className="mt-6">
+                    <AnimatePresence mode="wait">
+                        <motion.div
+                            key={activeTab}
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -10 }}
+                            transition={{ duration: 0.3 }}
+                        >
+                            {TAB_CONTENT[activeTab]}
+                        </motion.div>
+                    </AnimatePresence>
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 

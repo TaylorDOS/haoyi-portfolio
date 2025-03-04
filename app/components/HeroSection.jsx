@@ -14,8 +14,7 @@ const HeroSection = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1.5 }}
             >
-                <div className="flex flex-col lg:flex-row mx-auto relative lg:h-[70vh]">
-
+                <div className="flex flex-col lg:flex-row mx-auto relative lg:h-[60vh]">
                     <div className="w-full lg:w-2/3 flex flex-col justify-center text-center lg:text-left z-10 lg:items-start">
                         <h1 className="text-gray-800 font-bold text-4xl lg:text-6xl tracking-tight">
                             <div className="mt-8 mb-2 text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">Hello, I&apos;m</div>
@@ -45,8 +44,8 @@ const HeroSection = () => {
                                 href="https://www.linkedin.com/in/tanhaoyi"
                                 className="px-6 inline-flex items-center justify-center py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 text-white transition-all duration-300 ease-in-out hover:from-secondary-500 hover:to-primary-500 hover:shadow-lg"
                             >
+                                <FaLinkedin className="text-lg mr-2" />
                                 <span>Connect</span>
-                                <FaLinkedin className="ml-2 text-lg" />
                             </Link>
                             <Link
                                 href="https://drive.google.com/file/d/1qmrUKa-6gkuHnOwZF0hlwsIffA9Xciz6/view?usp=sharing"
