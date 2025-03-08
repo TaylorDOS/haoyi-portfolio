@@ -41,18 +41,18 @@ const HeroSection = () => {
                         </p>
                         <div className="z-10 relative flex flex-col lg:flex-row items-center justify-center gap-4">
                             <Link
-                                href="https://www.linkedin.com/in/tanhaoyi"
+                                href="/portfolio-tanhy.pdf"
+                                download="portfolio-tanhy.pdf"
                                 className="flex items-center justify-center px-6 py-3 w-full rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 text-white transition-all duration-300 ease-in-out hover:from-secondary-500 hover:to-primary-500 hover:shadow-lg"
                             >
-                                <FaLinkedin className="text-lg mr-2" />
-                                <span className="text-center">Connect</span>
+                                <span className="text-center">Portfolio</span>
                             </Link>
 
                             <Link
                                 href="https://drive.google.com/file/d/1qmrUKa-6gkuHnOwZF0hlwsIffA9Xciz6/view?usp=sharing"
                                 className="flex items-center justify-center px-6 py-3 w-full rounded-full bg-white transition-all duration-300 ease-in-out hover:from-secondary-500 hover:to-primary-500 hover:shadow-lg"
                             >
-                                <span className="text-center">Resume</span>
+                                <span className="text-center">CV</span>
                             </Link>
                         </div>
                     </div>
