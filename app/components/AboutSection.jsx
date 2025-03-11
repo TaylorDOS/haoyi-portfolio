@@ -86,7 +86,7 @@ const AboutSection = () => {
             <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                 <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">About Me</h2>
                 <p className="text-md text-justify leading-tight">
-                    Hello! I&apos;m a graduating Computer Science and Design student from SUTD, passionate about crafting intuitive, user-centered digital experiences. I specialize in UI/UX design, web development, visual storytelling, and immersive content creation. My strength is transforming complex data into engaging visual narratives, making insights accessible to everyone.
+                    Hello! I&apos;m a graduating Computer Science and Design (CSD) student from the Singapore University of Technology and Design (SUTD), passionate about crafting intuitive, user-centered digital experiences. I specialize in UI/UX design, web development, visual storytelling, and immersive content creation. My strength is transforming complex data into engaging visual narratives, making insights accessible to everyone.
                 </p>
                 <p className="text-md mt-4 text-justify leading-tight">
                     In addition to my deep interest in UI/UX, I have a strong foundation in full-stack application development and virtual reality content creation. I am constantly seeking opportunities to expand my knowledge and skill set.

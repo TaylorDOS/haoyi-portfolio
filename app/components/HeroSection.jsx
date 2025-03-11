@@ -16,7 +16,7 @@ const HeroSection = () => {
             >
                 <div className="flex flex-col lg:flex-row mx-auto relative lg:h-[60vh]">
                     <div className="w-full lg:w-2/3 flex flex-col justify-center text-center lg:text-left z-10 lg:items-start">
-                        <h1 className="text-gray-800 font-bold text-4xl lg:text-6xl tracking-tight">
+                        <h1 className="text-gray-800 font-bold text-3xl lg:text-6xl tracking-tight">
                             <div className="mt-8 mb-2 text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">Hello, I&apos;m</div>
                             <TypeAnimation
                                 sequence={[
@@ -24,11 +24,11 @@ const HeroSection = () => {
                                     3000,
                                     "Software Developer",
                                     1500,
-                                    "Application Developer",
+                                    "App Developer",
                                     1500,
                                     "UI/UX Designer",
                                     1500,
-                                    "Interaction Designed",
+                                    "Interaction Designer",
                                     1500
                                 ]}
                                 wrapper="span"
@@ -37,7 +37,7 @@ const HeroSection = () => {
                             />
                         </h1>
                         <p className="text-gray-600 text-md my-2 lg:text-lg">
-                            graduating Computer Science & Design student based in Singapore
+                         Computer Science & Design student based in Singapore
                         </p>
                         <div className="z-10 relative flex flex-col lg:flex-row items-center justify-center gap-4">
                             <Link

@@ -11,36 +11,6 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Planet Golf",
-    description: "VR Game Development",
-    details:
-      "Planet Golf is a VR games designed for Oculus Quest 2, it is a mini-golf game across different planetary terrains with varying gravity settings.",
-    image: "/images/projects/planet-golf.png",
-    category: ["Academic"],
-    externalLink: "https://github.com/TaylorDOS/Planet-Golf",
-  },
-  {
-    id: 3,
-    title: "Digital Twin Prototype",
-    description: "Industry 4.0 Internship Project with ARTC",
-    details:
-      "A proof-of-concept Unity application for condition monitoring in Industry 4.0. The app runs on an iPad and enables real-time machine status monitoring via MQTT connections, with dynamic UI for graphics visualization.",
-    image: "/images/projects/astar-internship.png",
-    category: ["Internship"],
-    externalLink: "https://www.a-star.edu.sg/News/astarNews/news/publicity-highlights/launch-of-a-star-s-model-factory---artc",
-  },
-  {
-    id: 4,
-    title: "CreAItive Studios",
-    description: "Service Design Studio, in collab with CPF Board",
-    details:
-      "Service Design Studio is a module dedicated to the visual and functional redesign of the CPF mobile application, aiming to improve accessibility for digitally vulnerable groups. The project focuses on user-centric enhancements, ensuring a more inclusive and intuitive experience.",
-    image: "/images/projects/design-studio.png",
-    category: ["Industry", "Academic"],
-    externalLink: "https://www.youtube.com/watch?v=Xj8-tfrNFxQ&ab_channel=OnnHuiNing",
-  },
-  {
-    id: 5,
     title: "OpenDot",
     description: "Mobile App Development",
     details:
@@ -50,7 +20,7 @@ const projectsData = [
     externalLink: null,
   },
   {
-    id: 6,
+    id: 4,
     title: "LearnMate",
     description: "Interaction Design Project",
     details:
@@ -59,28 +29,9 @@ const projectsData = [
     category: ["Academic"],
     externalLink: null,
   },
+  
   {
-    id: 7,
-    title: "Catapult's Digital Brochure",
-    description: "Internship Web Project",
-    details:
-      "Designed, developed and deployed an interactive digital brochure web app during a three month internship with Catapult by CapitaLand. Integrated with Airtable low-code platform as the data storage, the web app allow team members with no coding experience to update the content seamlessly.",
-    image: "/images/projects/digital-brochure.png",
-    category: ["Internship"],
-    externalLink: "https://catapult-leaders.com/",
-  },
-  {
-    id: 8,
-    title: "Catapult-leaders Website",
-    description: "Corporate Digital Solution",
-    details:
-      "Continued as a professional technical consultant and vendor, overseeing maintenance and enhancements of Catapult's Digital Brochure. Delivered a revamped UI, optimized performance with caching, and improved SEO.",
-    image: "/images/projects/catapult-leaders.png",
-    category: ["Industry"],
-    externalLink: "https://catapult-leaders.com/",
-  },
-  {
-    id: 9,
+    id: 5,
     title: "Web3 Voting Application",
     description: "Blockchain Project",
     details:
@@ -90,7 +41,17 @@ const projectsData = [
     externalLink: "https://github.com/isaackohjw/DApp",
   },
   {
-    id: 10,
+    id: 6,
+    title: "Digital Twin Prototype",
+    description: "Industry 4.0 Internship Project with ARTC",
+    details:
+      "A proof-of-concept Unity application for condition monitoring in Industry 4.0. The app runs on an iPad and enables real-time machine status monitoring via MQTT connections, with dynamic UI for graphics visualization.",
+    image: "/images/projects/astar-internship.png",
+    category: ["Internship"],
+    externalLink: "https://www.a-star.edu.sg/News/astarNews/news/publicity-highlights/launch-of-a-star-s-model-factory---artc",
+  },
+  {
+    id: 7,
     title: "Ice Nine",
     description: "Virtual Reality Live Performance",
     details:
@@ -100,7 +61,7 @@ const projectsData = [
     externalLink: "https://pvfa.tamu.edu/news/2024/04/15/ice-nine-to-bring-virtual-reality-and-live-performance-together-at-igloo-studio/",
   },
   {
-    id: 11,
+    id: 8,
     title: "IoT-drive Asset Tracking Optimization",
     description: "IoT & Cloud Computing Project",
     details:
@@ -108,6 +69,36 @@ const projectsData = [
     image: "/images/projects/IoT.png",
     category: ["Academic", "Industry"],
     externalLink: "https://github.com/smriti199/CCIOT_Logistics-Network",
+  },
+  {
+    id: 9,
+    title: "Catapult's Digital Brochure",
+    description: "Internship Web Project",
+    details:
+      "Designed, developed and deployed an interactive digital brochure web app during a three month internship with Catapult by CapitaLand. Integrated with Airtable low-code platform as the data storage, the web app allow team members with no coding experience to update the content seamlessly.",
+    image: "/images/projects/digital-brochure.png",
+    category: ["Internship"],
+    externalLink: "https://catapult-leaders.com/",
+  },
+  {
+    id: 10,
+    title: "Catapult-leaders Website",
+    description: "Corporate Digital Solution",
+    details:
+      "Continued as a professional technical consultant and vendor, overseeing maintenance and enhancements of Catapult's Digital Brochure. Delivered a revamped UI, optimized performance with caching, and improved SEO.",
+    image: "/images/projects/catapult-leaders.png",
+    category: ["Industry"],
+    externalLink: "https://catapult-leaders.com/",
+  },
+  {
+    id: 11,
+    title: "CreAItive Studios",
+    description: "Service Design Studio, in collab with CPF Board",
+    details:
+      "Service Design Studio is a module dedicated to the visual and functional redesign of the CPF mobile application, aiming to improve accessibility for digitally vulnerable groups. The project focuses on user-centric enhancements, ensuring a more inclusive and intuitive experience.",
+    image: "/images/projects/design-studio.png",
+    category: ["Industry", "Academic"],
+    externalLink: "https://www.youtube.com/watch?v=Xj8-tfrNFxQ&ab_channel=OnnHuiNing",
   },
   {
     id: 12,
