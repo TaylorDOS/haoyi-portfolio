@@ -32,6 +32,7 @@ module.exports = {
     },
     fontFamily: {
       sfprobold: ["var(--font-sfprobold)"],
+      playfair: ['var(--font-playfair)'],
     },
   },
   plugins: [],
