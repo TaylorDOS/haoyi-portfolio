@@ -3,7 +3,6 @@ import Link from "next/link";
 import imageUrlBuilder from "@sanity/image-url";
 import { client } from "../sanity/client";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 const images = [
   "/images/travel/hero-1.jpeg",
@@ -23,7 +22,8 @@ const POSTS_QUERY = `*[
   slug,
   excerpt,
   publishedAt,
-  coverImage
+  coverImage,
+  tags
 }`;
 
 const options = { next: { revalidate: 30 } };
@@ -73,7 +73,7 @@ export default function TravelPage() {
       </div>
       <div className="container mx-auto min-h-screen max-w-6xl px-4">
         <h2 className="pt-8 text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">
-          Travel Blog
+          Travel Log
         </h2>
         <div className="mt-2 leading-snug tracking-tight">
           This is my travel log — not just of places, but of people, moments, and the quiet
@@ -92,13 +92,12 @@ export default function TravelPage() {
               >
                 <Link href={`/travel/${post.slug.current}`} className="block h-full">
                   <div className="flex flex-col md:flex-row h-full">
-                    {/* Image */}
-                    <div className="relative w-full lg:w-1/2 aspect-video md:aspect-auto bg-gray-100 overflow-hidden">
+                    <div className="relative w-full lg:w-1/4 aspect-video md:aspect-auto bg-gray-100 overflow-hidden">
                       {coverImageUrl ? (
                         <img
                           src={coverImageUrl}
                           alt={post.title}
-                          className="object-cover w-full h-full aspect-video"
+                          className="object-cover w-full h-full"
                         />
                       ) : (
                         <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
@@ -106,9 +105,7 @@ export default function TravelPage() {
                         </div>
                       )}
                     </div>
-
-                    {/* Text Content */}
-                    <div className="p-4 flex flex-col justify-between md:w-2/3">
+                    <div className="p-8 flex flex-col justify-between lg:w-3/4">
                       <div>
                         <h3 className="text-lg font-semibold text-primary-500">{post.title}</h3>
                         <p className="text-sm text-gray-600 mt-1">
@@ -120,6 +117,15 @@ export default function TravelPage() {
                         </p>
                         {post.excerpt && (
                           <p className="text-sm text-gray-700 mt-2 line-clamp-3">{post.excerpt}</p>
+                        )}
+                        {post.tags?.length > 0 && (
+                          <p>
+                            {post.tags.map((tag, i) => (
+                              <span key={i} className="inline-block mt-2 bg-gray-200 text-gray-700 px-2 py-1 text-xs rounded mr-2">
+                                {tag}
+                              </span>
+                            ))}
+                          </p>
                         )}
                       </div>
                     </div>
