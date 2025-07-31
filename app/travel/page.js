@@ -62,11 +62,11 @@ export default function TravelPage() {
           </div>
           <div className="w-full lg:w-1/3 text-center font-playfair italic space-y-4 px-4">
             <p className="text-sm text-gray-300">
-              "To see the world,<br />
+              To see the world,<br />
               things dangerous to come to,<br />
               to see behind walls, draw closer,<br />
               to find each other, and to feel.<br />
-              That is the purpose of life."
+              That is the purpose of life.
             </p>
             <div className="text-xs tracking-wide text-gray-300">
               Walter Mitty
