@@ -49,38 +49,40 @@ export default function TravelPage() {
   return (
     <main className="bg-blue-50">
       <div
-        className="relative h-[70vh] bg-cover bg-center transition-all duration-1000 ease-in-out"
+        className="relative h-[100vh] bg-cover bg-center transition-all duration-1000 ease-in-out"
         style={{ backgroundImage: `url(${images[currentIndex]})` }}
       >
-        <div className="absolute inset-0 bg-black/50 z-0" />
-        <div className="absolute inset-0 z-10 flex items-center justify-center">
-          <div className="flex flex-col items-center text-center gap-4 max-w-6xl px-4">
-            <h1 className="text-4xl font-bold text-white">
-              Travel with Hao Yi
-            </h1>
-            <p className="font-playfair text-gray-200 italic leading-relaxed">
-              To see the world,
-              <br />things dangerous to come to,
-              <br />to see behind walls, draw closer,
-              <br />to find each other, and to feel.
-              <br />That is the purpose of life.
+        <div className="absolute inset-0 bg-black/60 z-0" />
+        <div className="max-w-6xl mx-auto absolute inset-0 z-10 flex flex-col lg:flex-row items-center justify-center p-8 gap-10 text-white">
+          <div className="w-full lg:w-2/3 max-w-2xl text-center lg:text-left space-y-6">
+            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">Travel</h1>
+            <p className="text-base md:text-lg text-gray-200 leading-relaxed">
+              Not just for the places, but for the people, the fleeting moments, and the quiet magic that lives between destinations. Whether wandering familiar streets or stepping onto foreign soil, I travel to understand, to remember, and to keep growing — one journey at a time.
             </p>
-            <div className="text-gray-200 text-xs">
+          </div>
+          <div className="w-full lg:w-1/3 text-center font-playfair italic space-y-4 px-4">
+            <p className="text-sm text-gray-300">
+              "To see the world,<br />
+              things dangerous to come to,<br />
+              to see behind walls, draw closer,<br />
+              to find each other, and to feel.<br />
+              That is the purpose of life."
+            </p>
+            <div className="text-xs tracking-wide text-gray-300">
               Walter Mitty
             </div>
           </div>
         </div>
       </div>
-      <div className="container mx-auto min-h-screen max-w-6xl px-4">
-        <h2 className="pt-8 text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">
-          Travel Log
+
+      <div className="container mx-auto max-w-6xl px-4">
+        <h2 className="mt-4 mx-4 text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">
+          Chapter
         </h2>
-        <div className="mt-2 leading-snug tracking-tight">
-          This is my travel log — not just of places, but of people, moments, and the quiet
-          magic found between destinations. Whether on familiar streets or foreign soil, I
-          travel to understand, to remember, and to grow.
-        </div>
-        <ul className="flex flex-col gap-6 mt-8">
+        <p className="mx-4 mt-2 text-base">
+          Each journey is a story and every destination, a chapter.
+        </p>
+        <ul className="flex flex-col gap-6 mt-4 mx-4">
           {posts.map((post) => {
             const coverImageUrl = post.coverImage
               ? urlFor(post.coverImage).width(1000).height(1000).url()
@@ -88,16 +90,16 @@ export default function TravelPage() {
             return (
               <li
                 key={post._id}
-                className="bg-white shadow-sm border border-gray-200 rounded-xl overflow-hidden transition-transform"
+                className="bg-white shadow-sm border border-gray-200 rounded-xl overflow-hidden transition-transform hover:scale-105"
               >
                 <Link href={`/travel/${post.slug.current}`} className="block h-full">
-                  <div className="flex flex-col md:flex-row h-full">
-                    <div className="relative w-full lg:w-1/4 aspect-video md:aspect-auto bg-gray-100 overflow-hidden">
+                  <div className="flex flex-col md:flex-row">
+                    <div className="relative w-full md:w-1/4 bg-gray-100 overflow-hidden">
                       {coverImageUrl ? (
                         <img
                           src={coverImageUrl}
                           alt={post.title}
-                          className="object-cover w-full h-full"
+                          className="object-cover h-full w-full"
                         />
                       ) : (
                         <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
@@ -105,7 +107,7 @@ export default function TravelPage() {
                         </div>
                       )}
                     </div>
-                    <div className="p-8 flex flex-col justify-between lg:w-3/4">
+                    <div className="p-8 flex flex-col justify-between md:w-3/4">
                       <div>
                         <h3 className="text-lg font-semibold text-primary-500">{post.title}</h3>
                         <p className="text-sm text-gray-600 mt-1">

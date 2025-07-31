@@ -37,11 +37,13 @@ export default function RootLayout({ children }) {
       <body className={`${playfair.variable} ${inter.className}`}>
         <Navbar />
         {children}
-        <div className="container mx-auto px-8 max-w-6xl">
-          <section id="contact" className="scroll-mt-24">
-            <EmailSection />
-          </section>
-          <Footer />
+        <div className="bg-blue-50">
+          <div className="container mx-auto px-8 max-w-6xl">
+            <section id="contact" className="scroll-mt-24">
+              <EmailSection />
+            </section>
+            <Footer />
+          </div>
         </div>
         <SpeedInsights />
         <Analytics />
