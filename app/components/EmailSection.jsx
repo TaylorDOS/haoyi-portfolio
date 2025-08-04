@@ -93,7 +93,7 @@ const EmailSection = () => {
                 id="email"
                 required
                 className="bg-white border border-gray-400 placeholder-[#9CA2A9] text-black text-sm rounded-lg block w-full p-2.5"
-                placeholder="coolkid@gmail.com"
+                placeholder="email@gmail.com"
               />
             </div>
             <div className="mb-6">
@@ -109,7 +109,7 @@ const EmailSection = () => {
                 id="subject"
                 required
                 className="bg-white border border-gray-400 placeholder-[#9CA2A9] text-black text-sm rounded-lg block w-full p-2.5"
-                placeholder="Just saying hi"
+                placeholder="Saying hi"
               />
             </div>
             <div className="mb-6">

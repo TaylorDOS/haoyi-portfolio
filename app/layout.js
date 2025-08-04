@@ -17,13 +17,13 @@ export const playfair = Playfair_Display({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://taylordos-portfolio.vercel.app'),
-  title: "Hao Yi's Portfolio Website",
-  description: "Hao Yi's portfolio website is created in Next.js using Tailwind.CSS",
+  metadataBase: new URL('https://haoyi-portfolio.com'),
+  title: "Hao Yi's Portfolio",
+  description: "Based in Singapore, Hao Yi is a web developer passionate about crafting interactive web experiences through the power of visual storytelling.",
   openGraph: {
-    title: "Hao Yi's Portfolio Website",
-    description: "Hao Yi's portfolio website is created in Next.js using Tailwind.CSS", // Added OpenGraph description
-    url: 'https://taylordos-portfolio.vercel.app',
+    title: "Hao Yi's Portfolio",
+    description: "Based in Singapore, Hao Yi is a web developer passionate about crafting interactive web experiences through the power of visual storytelling.",
+    url: 'https://haoyi-portfolio.com',
     images: '/images/opengraph-image.png',
   },
 };
