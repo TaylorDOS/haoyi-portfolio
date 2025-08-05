@@ -22,13 +22,13 @@ const HeroSection = () => {
                                 sequence={[
                                     "Hao Yi",
                                     3000,
-                                    "Software Developer",
+                                    "Brand Consultant",
                                     1500,
-                                    "App Developer",
+                                    "System Designer",
                                     1500,
-                                    "UI/UX Designer",
+                                    "Web Developer",
                                     1500,
-                                    "Interaction Designer",
+                                    "Visual Storyteller",
                                     1500
                                 ]}
                                 wrapper="span"
@@ -37,7 +37,7 @@ const HeroSection = () => {
                             />
                         </h1>
                         <p className="text-gray-600 text-md my-2 lg:text-lg">
-                         Computer Science & Design student based in Singapore
+                            Tech Consultant & Branding Strategist based in Singapore
                         </p>
                         <div className="z-10 relative flex flex-col lg:flex-row items-center justify-center gap-4">
                             <Link
