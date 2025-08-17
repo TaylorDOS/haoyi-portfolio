@@ -14,7 +14,7 @@ const HeroSection = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1.5 }}
             >
-                <div className="flex flex-col lg:flex-row mx-auto relative lg:h-[60vh]">
+                <div className="flex flex-col lg:flex-row mx-auto relative">
                     <div className="w-full lg:w-2/3 flex flex-col justify-center text-center lg:text-left z-10 lg:items-start">
                         <h1 className="text-gray-800 font-bold text-3xl lg:text-6xl tracking-tight">
                             <div className="mt-8 mb-2 text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">Hello, I&apos;m</div>
@@ -22,22 +22,22 @@ const HeroSection = () => {
                                 sequence={[
                                     "Hao Yi",
                                     3000,
-                                    "Brand Consultant",
-                                    1500,
-                                    "System Designer",
-                                    1500,
-                                    "Web Developer",
-                                    1500,
+                                    "Tech Consultant",
+                                    3000,
+                                    "Branding Strategist",
+                                    3000,
+                                    "Software Engineer",
+                                    3000,
                                     "Visual Storyteller",
-                                    1500
+                                    3000
                                 ]}
                                 wrapper="span"
                                 speed={50}
                                 repeat={Infinity}
                             />
                         </h1>
-                        <p className="text-gray-600 text-md my-2 lg:text-lg">
-                            Tech Consultant & Branding Strategist based in Singapore
+                        <p className="text-gray-600 text-md my-4 max-w-lg leading-tight">
+                            Bridging technology and branding to craft digital strategies that not only work, but stick.
                         </p>
                         <div className="z-10 relative flex flex-col lg:flex-row items-center justify-center gap-4">
                             <Link

@@ -4,9 +4,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const tabs = [
-    { title: "Education", id: "education" },
-    { title: "Experience", id: "experience" },
     { title: "Skills", id: "skills" },
+    { title: "Experience", id: "experience" },
+    { title: "Education", id: "education" },
 ];
 
 const EducationCard = ({ logo, alt, title, description }) => {
@@ -100,18 +100,17 @@ const TAB_CONTENT = {
 };
 
 const AboutSection = () => {
-    const [activeTab, setActiveTab] = useState("education");
+    const [activeTab, setActiveTab] = useState("skills");
 
     return (
         <div className="gap-8 items-center py-8">
             <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                 <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">About Me</h2>
                 <p className="text-md text-justify leading-tight">
-                    Hi, I&apos;m a full-stack developer and designer based in Singapore, helping brands transform ideas into engaging digital experiences.
-                    With a background in Computer Science & Design, and cross-industry experience in learning and development, I craft bold brand identities and translate complex data into clear, compelling visual stories.
+                    Hi, I&apos;m a tech consultant and branding strategist based in Singapore. I help businesses turn ideas into engaging digital experiences by combining a strong foundation in computer science with cross-industry expertise in learning & development, interaction design, and design thinking.
                 </p>
                 <p className="text-md mt-4 text-justify leading-tight">
-                    Whether you&apos;re starting from scratch or reimagining your digital presence, I bring clarity, consistency, and creativity to your brand through design that works and stories that resonate.
+                    I specialize in crafting bold brand identities and translating complex data into clear, compelling visual stories. Whether you’re building from scratch or reimagining your digital presence, I bring clarity, consistency, and creativity to every project — blending design that works with stories that resonate.
                 </p>
                 <div className="flex flex-row justify-start mt-8 space-x-6 border-b border-gray-300">
                     {tabs.map((tab) => (

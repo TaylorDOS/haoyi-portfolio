@@ -5,8 +5,8 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const navLinks = [
-  { title: "About", path: "/#about" },
-  { title: "Projects", path: "/#projects" },
+  { title: "About Me", path: "/" },
+  { title: "Projects", path: "/projects" },
   { title: "Travel", path: "/travel" },
   { title: "Contact", path: "/#contact" },
 ];
